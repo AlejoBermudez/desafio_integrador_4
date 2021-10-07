@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.home {
+  background-image: url("/minimalist-wallpaper-ixpap.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+.header-container {
+  padding: 20px;
+}
+.title {
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  overflow: auto;
+  margin: 0px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin-top: 155px;
+}
+
+.presentacion {
+  width: 100%;
+  height: 538px;
+  background-color: #141414;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (min-width: 960px) {
+  .presentacion {
+    padding: 0px;
+  }
+}
+.presentacion__img {
+  height: 380px;
+  width: 550px;
+  display: none;
+  margin: 0px;
+  margin-top: 50px;
+}
+@media (min-width: 960px) {
+  .presentacion__img {
+    display: inherit;
+  }
+}
+
+.presentacion__contenedor {
+  display: flex;
+  flex-direction: column;
+}
+.presentacion__title {
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+  margin-top: 55px;
+}
+
+.presentacion__text {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 80px;
+}
+
+@media (min-width: 960px) {
+  .presentacion__text {
+    padding: 25px;
+  }
+}
+.servicios {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.servicios__title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+.servicios__content {
+  display: grid;
+  gap: 40px;
+}
+.servicios__card {
+  width: 262px;
+  border: solid 2px;
+  margin: 0px auto;
+}
+.service__img {
+  height: 185px;
+  width: 258px;
+  object-fit: fill;
+}
+
+.service__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.service__text {
+  text-align: center;
+}
