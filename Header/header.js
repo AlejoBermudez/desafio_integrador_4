@@ -4,7 +4,7 @@ function headerComponent (el){
 
     componentEl.innerHTML = 
     `   <header class="header">
-        <img class="header__logo" src="Logo Alejo.png" alt="Logo">
+        <img class="header__logo" src="./imagenes/Logo Alejo.png" alt="Logo">
         <label for="Menu" class="contenedor-menu">
             <div id="Menu" class="menu"></div>
             <div id="Menu" class="menu"></div>

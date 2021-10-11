@@ -25,9 +25,6 @@ function getWelcome (){
     }
 
     
-     
-
- 
 function addIntro (params = {}){
     const template = document.querySelector("#presentacion-template");
     const container = document.querySelector(".presentacion-content");
@@ -88,6 +85,7 @@ return res.json()
       });
       fieldsCollection.forEach((item) => {
         const id = buscarAsset(item.imageID, item.includes);
+        //console.log(id);
         item.imagen = "https:" + id.fields.file.url;
       });
       return fieldsCollection;
@@ -113,6 +111,12 @@ getServices().then(function(data) {
         addServices(r)
     }
 })
+
+const formEl = document.querySelector(".form__container");
+formComponent(formEl);
+
+const footerEl = document.querySelector(".footer__container");
+footerComponent(footerEl)
 }
 
 
