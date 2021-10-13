@@ -4,7 +4,7 @@ function headerComponent (el){
 
     componentEl.innerHTML = 
     `   <header class="header">
-        <img class="header__logo" src="./imagenes/Logo Alejo.png" alt="Logo">
+        <img class="header__logo" src="/imagenes/Logo Alejo.png" alt="Logo">
         <label for="Menu" class="contenedor-menu">
             <div id="Menu" class="menu"></div>
             <div id="Menu" class="menu"></div>
@@ -15,9 +15,9 @@ function headerComponent (el){
                     <button class="boton_cerrar-menu">X</button>
                 </div>
                 <div class="contenedor_titulo">
-                    <div class="menu__title">Portfolio</div>
-                    <div class="menu__title">Servicios</div>
-                    <div class="menu__title">Contacto</div>
+                <a class="menu__title" href="./portfolio/portfolio.html">Portfolio</a>
+                <a class="menu__title" href="./servicios/servicios.html">Servicios</a>
+                <a class="menu__title" href="./contacto/contacto.html">Contacto</a>
                 </div>
             </div>
             </header>

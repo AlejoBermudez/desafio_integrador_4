@@ -1,11 +1,9 @@
-.form__container {
-  background-color: #141414;
-  height: 660px;
-  padding: 20px;
-}
 .form__flex-split {
   display: flex;
   flex-direction: column;
+  background-color: #141414;
+  height: 660px;
+  padding: 20px;
 }
 @media (min-width: 960px) {
   .form__flex-split {
