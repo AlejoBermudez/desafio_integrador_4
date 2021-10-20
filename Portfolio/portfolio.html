@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/Header/header.css">
+    <link rel="stylesheet" href="/Footer/footer.css">
+    <link rel="stylesheet" href="./portfolio.css">
+    <script defer src="/index.js"></script>
+    <script defer src="/Header/header.js"></script>
+    <script defer src="/Footer/footer.js"></script>
+    <script defer src="./porfolio.js"></script>
+    <title>Portfolio</title>
 </head>
 <body>
-    <header class="header__container"></header>
+    <header class="header__container-p"></header>
+    <section class="main-section">
+        <h3 class="portfolio__title">Portfolio</h3>
+        <div class="servicios__content"></div>
+        <template id="servicios__template">
+            <div class="servicios__card">
+                <img src="minimalist-wallpaper-ixpap.jpg" alt="img" class="service__img">
+                <h4 class="service__title">Titulo</h4>
+                <p class="service__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat quisquam dolor fugit repellat laboriosam animi nihil explicabo sunt eum cumque non omnis nemo est nulla, tenetur voluptas pariatur corrupti quod.</p>
+            </div>
+        </template>
+        <footer class="footer__container-p"></footer>
+    </section>
 </body>
 </html>

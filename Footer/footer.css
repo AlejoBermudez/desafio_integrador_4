@@ -1,13 +1,8 @@
-@media (min-width: 960px) {
-  .footer__container {
-    height: 346px;
-  }
-}
 .footer {
   display: flex;
   padding: 20px;
   flex-direction: column;
-  height: 550px;
+
   background-color: #2c2c2c;
 }
 
