@@ -100,23 +100,23 @@ function buscarAsset(imageID, includes) {
 }
 
 function main (){
-const headerEl = document.querySelector(".header-container");
+  getWelcome()
+  getIntro()
+  
+  getServices().then(function(data) {
+    for (const r of data) {
+      addServices(r)
+    }
+  })
+  
+  const headerEl = document.querySelector(".header-container");
+  headerComponent(headerEl)
+  
+  const formEl = document.querySelector(".form__container");
+  formComponent(formEl);
 
-getWelcome()
-getIntro()
-
-getServices().then(function(data) {
-  for (const r of data) {
-    addServices(r)
-  }
-})
-headerComponent(headerEl)
-
-const formEl = document.querySelector(".form__container");
-formComponent(formEl);
-
-const footerEl = document.querySelector(".footer__container");
-footerComponent(footerEl)
+  const footerEl = document.querySelector(".footer__container");
+  footerComponent(footerEl)
 }
 
 
