@@ -31,8 +31,8 @@ function buscarAsset(imageID, includes) {
 
 function PortfolioMain (){
 
-    const headerEL = document.querySelector(".header__container-p");
-    headerComponent(headerEL);
+    const headerEl = document.querySelector(".header__container-p");
+    headerComponent(headerEl);
 
     getPortfolio().then(function(data) {
         for (const r of data) {

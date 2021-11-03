@@ -23,34 +23,5 @@ function formComponent (el){
 
     el.appendChild(formEl);
 
-    function sendFormInfo() {
-        const formEl = document.querySelector(".form");
-      
-        formEl.addEventListener("submit", (evento) => {
-          evento.preventDefault();
-      
-          const formData = new FormData(evento.target);
-          const datosObj = Object.fromEntries(formData.entries());
-      
-          fetch("https://apx-api.vercel.app/api/utils/dwf", {
-            method: "POST",
-            headers: { "content-type": "application/json" },
-      
-            body: JSON.stringify({
-              to: "aebmbu@gmail.com",
-              message: `
-              Nombre: ${datosObj.nombre} 
-              Email: ${datosObj.email} 
-              Mensaje: ${datosObj.mensaje}
-              `,
-            }),
-          });
-          formEl.reset();
-          alert(
-            "Mensaje enviado correctamente, Gracias " +
-              datosObj.nombre +
-              " por comunicarte."
-          );
-        });
-      }
+    
 }

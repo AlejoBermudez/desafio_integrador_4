@@ -8,7 +8,7 @@ function contactMain (){
     const footerEl = document.querySelector(".footer-component__container");
     footerComponent(footerEl);
     
-    sendFormInfo()
+    
 }
 
 contactMain()

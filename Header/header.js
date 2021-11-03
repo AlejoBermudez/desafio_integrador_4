@@ -1,4 +1,3 @@
-
 function headerComponent (el){
     const componentEl = document.createElement("div")
 
@@ -20,9 +19,8 @@ function headerComponent (el){
                 <a class="menu__title" href="./contacto/contacto.html">Contacto</a>
                 </div>
             </div>
-            </header>
-    `
-;
+            </header>`
+
 const AbrirMenuEl = componentEl.querySelector(".contenedor-menu");
 const CerrarMenuEl = componentEl.querySelector(".boton_cerrar-menu");
 const VentanaMenuEl = componentEl.querySelector(".menu_display");

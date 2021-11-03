@@ -100,6 +100,9 @@ function buscarAsset(imageID, includes) {
 }
 
 function main (){
+  const headerEl = document.querySelector(".header-container");
+  headerComponent(headerEl)
+  
   getWelcome()
   getIntro()
   
@@ -109,8 +112,6 @@ function main (){
     }
   })
   
-  const headerEl = document.querySelector(".header-container");
-  headerComponent(headerEl)
   
   const formEl = document.querySelector(".form__container");
   formComponent(formEl);
