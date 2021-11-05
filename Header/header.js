@@ -14,7 +14,7 @@ function headerComponent (el){
                     <button class="boton_cerrar-menu">X</button>
                 </div>
                 <div class="contenedor_titulo">
-                <a class="menu__title" href="/Portfolio/portfolio.html">Portfolio</a>
+                <a class="menu__title" href="https://github.com/AlejoBermudez/desafio_integrador_4/blob/main/Portfolio/portfolio.html">Portfolio</a>
                 <a class="menu__title" href="/Servicios/servicios.html">Servicios</a>
                 <a class="menu__title" href="/Contacto/contacto.html">Contacto</a>
                 </div>
