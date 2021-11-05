@@ -2,7 +2,11 @@
   background-color: #141414;
 }
 
-.portfolio__title {
+.main-section {
+  display: flex;
+  flex-direction: column;
+}
+.titulo__portfolio {
   color: #141414;
   font-size: 48px;
   margin: 0 auto;

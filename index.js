@@ -1,9 +1,9 @@
-function addWelcome (params = {}){
+function addWelcome (params){
     const template = document.querySelector("#welcome-template");
     const container = document.querySelector(".welcome");
 
-    template.content.querySelector(".title").textContent = params.titulo
-    template.content.querySelector(".subtitle").textContent = params.subtitle 
+    template.content.querySelector(".welcome_title").textContent = params.titulo
+    template.content.querySelector(".welcome_subtitle").textContent = params.subtitle 
 
     const clone = document.importNode(template.content, true);
     container.appendChild(clone);
@@ -25,7 +25,7 @@ function getWelcome (){
     }
 
     
-function addIntro (params = {}){
+function addIntro (params){
     const template = document.querySelector("#presentacion-template");
     const container = document.querySelector(".presentacion-content");
 
@@ -55,7 +55,7 @@ return res.json()
 });
 }
 
-function addServices (params = {}){
+function addServices (params){
 
     const template = document.querySelector("#servicios__template");
     const container = document.querySelector(".servicios__content");
@@ -100,17 +100,14 @@ function buscarAsset(imageID, includes) {
 }
 
 function main (){
- 
-  
   getWelcome()
   getIntro()
-
+  
   getServices().then(function(data) {
     for (const r of data) {
       addServices(r)
     }
   })
-  
   
   const headerEl = document.querySelector(".header-container");
   headerComponent(headerEl)

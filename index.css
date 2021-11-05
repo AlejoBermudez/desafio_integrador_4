@@ -17,7 +17,7 @@ body {
 .header-container {
   padding: 20px;
 }
-.title {
+.welcome_title {
   text-align: center;
   font-size: 48px;
   color: #fff;
@@ -25,7 +25,7 @@ body {
   margin: 0px;
 }
 
-.subtitle {
+.welcome_subtitle {
   text-align: center;
   color: #fff;
   font-size: 32px;
@@ -100,31 +100,37 @@ body {
     font-size: 48px;
   }
 }
-.servicios__content {
+.servicios__content,
+.portfolio__content {
   display: grid;
   gap: 40px;
 }
 
 @media (min-width: 960px) {
-  .servicios__content {
+  .servicios__content,
+  .portfolio__content {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-.servicios__card {
+.servicios__card,
+.portfolio__card {
   width: 320px;
   margin: 0px auto;
 }
-.service__img {
+.service__img,
+.portfolio__img {
   height: 185px;
   width: 258px;
   margin-left: 30px;
 }
 
-.service__title {
+.service__title,
+.portfolio__title {
   font-size: 24px;
   text-align: center;
 }
 
-.service__text {
+.service__text,
+.portfolio__text {
   text-align: center;
 }
