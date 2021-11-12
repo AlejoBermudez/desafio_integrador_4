@@ -41,7 +41,7 @@ function buscarAsset(imageID, includes) {
       return res.sys.id == imageID;
     });
     return found;
-  }
+}
 
 
 function PortfolioMain (){
