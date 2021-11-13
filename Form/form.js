@@ -53,13 +53,13 @@ function formComponent (el){
     <form class="form">
     <div class="fieldset">
     <label class="form__label" for="Nombre">NOMBRE</label>
-    <input class="form__imput" type="text" id="Nombre">
+    <input class="form__imput" type="text" id="Nombre" name="userName">
     <div class="fieldset">
     <label class="form__label" for="Email">EMAIL</label>
-    <input class="form__imput" type="text" id="Email"> 
+    <input class="form__imput" type="text" id="Email" name="userEmail"> 
     <div class="fieldset">
             <label class="form__label" for="Mensaje">MENSAJE</label>
-            <textarea class="form__textarea" class="form__imput" id="Mensaje"></textarea>
+            <textarea class="form__textarea" class="form__imput" id="Mensaje" name="message"></textarea>
             <button class="form__button">Enviar</button>
             </div>
             </div>   
