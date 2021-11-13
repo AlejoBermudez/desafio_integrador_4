@@ -69,16 +69,20 @@ body {
   margin: 0 auto;
   text-align: center;
   font-size: 32px;
-  margin-top: 55px;
+  margin-top: 35px;
 }
 
 .presentacion__text {
   color: #fff;
   text-align: center;
   font-size: 16px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
-
+@media (max-width: 350px) {
+  .presentacion__text {
+    font-size: 14px;
+  }
+}
 @media (min-width: 960px) {
   .presentacion__text {
     padding: 25px;
