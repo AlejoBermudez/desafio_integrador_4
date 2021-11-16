@@ -3,9 +3,9 @@ function footerComponent (el){
 
     footerEl.innerHTML = 
     `<footer class="footer">
-    <a href="./index.html">
+    <a href="./index.html" class="footer_logo">
     <img src="https://github.com/AlejoBermudez/desafio_integrador_4/blob/main/imagenes/Logo%20Alejo.png?raw=true
-    " class="footer_logo" alt="Logo Alejo">
+    " alt="Logo Alejo">
     </a>
     <div class="redes">
         <p class="footer__redes">Instagram</p>
